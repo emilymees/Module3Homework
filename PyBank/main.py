@@ -37,7 +37,7 @@ with open(budget_csv, 'r') as csv_file:
     # removing first change stored in list since it skews the results
     profit_loss_average_change.pop(0)
 
-    # calculating the average change in profit/loss 
+    # calculating the average change in profit/loss and rounding to two decimals
     average_change = round(sum(profit_loss_average_change) / (total_months - 1), 2)
     
     # find the greatest change in profit/loss and mark the associated month
